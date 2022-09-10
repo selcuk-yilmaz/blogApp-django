@@ -1,9 +1,48 @@
-.navbar {
-  background-color: cadetblue;
+.stack{
+  background: url("/static/images/blogApp.jpg");
+  color: white;
+  height: 650px;
+  padding: 100px 0 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
 }
 
-.container {
+
+.navbar {
+  background-color: cadetblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+}
+
+.baha{
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
+.blog{
+  /* border: 2px solid red; */
+}
+
+.left{
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.right{
+  /* display: flex; */
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+
