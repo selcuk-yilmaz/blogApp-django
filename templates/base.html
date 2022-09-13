@@ -15,35 +15,13 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
   <body>
-    <div class="stack">
-      <!-- navbar start -->
-      <nav class="navbar navbar-expand-lg navbar navbar-dark">
-        <div class="baha">
-          <a class="blog navbar-brand" href="/">
-            <img
-              src="{% static 'images/blogFavicon.png' %}"
-              alt="Hi!"
-              width="45"
-              height="45"
-            />
-            Blog App
-          </a>
-          <div class="left">
-            <a class="navbar-brand" href="">Home</a>
-            <a class="navbar-brand" href="">About</a>
-          </div>
-        </div>
-        <div class="right">
-          <a class="navbar-brand" href="">Login</a>
-          <a class="navbar-brand" href="">Register</a>
-        </div>
-      </nav>
-
-      {% comment %}
-      <article class="container fullscreen">
-        <img class="image" src="{% static "images/blogApp.jpg" %}" alt="blog" />
-      </article>
-      {% endcomment %} {% block content %} {% endblock content %}
+    <div class="bod">
+      <div class="stack">
+        <!-- navbar start -->
+        {% include "partials/_navbar.html" %} 
+        {% block content %} {% endblock content %}
+        <div class="footer">{% include "partials/_footer.html" %}</div>
+      </div>
       <!-- JavaScript Bundle with Popper -->
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

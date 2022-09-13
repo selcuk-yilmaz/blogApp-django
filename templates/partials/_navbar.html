@@ -1,0 +1,22 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar navbar-dark">
+        <div class="baha">
+          <a class="blog navbar-brand" href="/">
+            <img
+              src="{% static 'images/blogFavicon.png' %}"
+              alt="Hi!"
+              width="45"
+              height="45"
+            />
+            Blog App
+          </a>
+          <div class="left">
+            <a class="navbar-brand" href="{% url "home" %}">Home</a>
+            <a class="navbar-brand" href="{% url "about" %}">About</a>
+          </div>
+        </div>
+        <div class="right">
+          <a class="navbar-brand" href="{% url "login" %}">Login</a>
+          <a class="navbar-brand" href="{% url "register" %}">Register</a>
+        </div>
+</nav>

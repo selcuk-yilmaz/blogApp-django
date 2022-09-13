@@ -1,4 +1,4 @@
-.stack{
+.stack {
   background: url("/static/images/blogApp.jpg");
   color: white;
   height: 650px;
@@ -11,7 +11,6 @@
   position: relative;
 }
 
-
 .navbar {
   background-color: cadetblue;
   position: absolute;
@@ -19,30 +18,34 @@
   left: 0;
   right: 0;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.baha{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.blog{
-  /* border: 2px solid red; */
-}
 
-.left{
+
+
+.left {
   /* display: flex; */
   /* justify-content: flex-start; */
   align-items: center;
   /* border: 2px solid red; */
 }
 
-.right{
+.right {
   /* display: flex; */
   justify-content: flex-end;
   align-items: center;
   /* border: 2px solid red; */
+}
+/* below is footer */
+.card {
+  /* background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+  position: absolute;
+  top: 600px;
+ 
 }
 
 
