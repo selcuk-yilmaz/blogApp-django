@@ -11,7 +11,7 @@ def register(request):
         form.save()
 
         username = form.cleaned_data.get("username")
-        password = form.cleaned_data.get("password2")
+        password = form.cleaned_data.get("password1")
         user = authenticate(username=username, password=password)
         login(request, user)
 
@@ -22,8 +22,8 @@ def register(request):
     }
     return render(request, 'registration/register.html', context)
 
-def login(request):
+# def login(request):
 
-    return redirect('home')
-def logout(request):
-    return redirect('home')
+#     return redirect('home')
+# def logout(request):
+#     return redirect('home')
